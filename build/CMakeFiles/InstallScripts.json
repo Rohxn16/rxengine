@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/rorschach/Dev/rxengine/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

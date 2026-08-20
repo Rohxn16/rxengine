@@ -1,3 +1,0 @@
-/home/rorschach/Dev/rxengine/build/CMakeFiles/rxengine.dir
-/home/rorschach/Dev/rxengine/build/CMakeFiles/edit_cache.dir
-/home/rorschach/Dev/rxengine/build/CMakeFiles/rebuild_cache.dir
