@@ -1,0 +1,4 @@
+# ninja log v7
+1	4	1787194130151977681	/home/rorschach/Dev/rxengine/build/CMakeFiles/cmake.verify_globs	acc11d9a76700606
+5	208	1787194130155977681	CMakeFiles/rxengine.dir/src/main.cpp.o	a2511702e3c07f33
+208	316	1787194130359977680	rxengine	fc0fc27f5df46a51

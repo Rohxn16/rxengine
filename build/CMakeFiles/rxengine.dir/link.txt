@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -Xlinker --dependency-file=CMakeFiles/rxengine.dir/link.d CMakeFiles/rxengine.dir/src/main.cpp.o CMakeFiles/rxengine.dir/src/math/vec2.cpp.o -o rxengine  /usr/lib/x86_64-linux-gnu/libSDL3_image.so.0.2.4 /usr/lib/x86_64-linux-gnu/libSDL3_ttf.so.0.2.2 /usr/lib/x86_64-linux-gnu/libSDL3.so.0.2.10

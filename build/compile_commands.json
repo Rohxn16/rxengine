@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/rorschach/Dev/rxengine/build",
+  "command": "/usr/bin/clang++  -I/home/rorschach/Dev/rxengine -I/home/rorschach/Dev/rxengine/include -g -std=gnu++17 -o CMakeFiles/rxengine.dir/src/main.cpp.o -c /home/rorschach/Dev/rxengine/src/main.cpp",
+  "file": "/home/rorschach/Dev/rxengine/src/main.cpp",
+  "output": "CMakeFiles/rxengine.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/rorschach/Dev/rxengine/build",
+  "command": "/usr/bin/clang++  -I/home/rorschach/Dev/rxengine -I/home/rorschach/Dev/rxengine/include -g -std=gnu++17 -o CMakeFiles/rxengine.dir/src/math/vec2.cpp.o -c /home/rorschach/Dev/rxengine/src/math/vec2.cpp",
+  "file": "/home/rorschach/Dev/rxengine/src/math/vec2.cpp",
+  "output": "CMakeFiles/rxengine.dir/src/math/vec2.cpp.o"
+}
+]
