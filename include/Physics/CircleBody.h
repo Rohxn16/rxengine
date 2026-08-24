@@ -6,7 +6,7 @@
 * the vision is to also include square bodies as well
 */
 
-struct Body
+struct CircleBody
 {
     Vector2 pos;
     Vector2 vel;

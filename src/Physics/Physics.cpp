@@ -1,11 +1,11 @@
-#include "Physics/Body.h"
+#include "Physics/CircleBody.h"
 #include "Physics/World.h"
 
 #include <iostream>
 
 World::World(float w, float h) : gravity(0.0f, 980), width(w), height(h) {}
 
-void World::AddBody(const Body &body)
+void World::AddBody(const CircleBody &body)
 {
     bodies.push_back(body);
 }
@@ -23,7 +23,7 @@ void World::Update(float dt)
     ResolveCollission();
 }
 
-void World::CheckBoundaries(Body &body)
+void World::CheckBoundaries(CircleBody &body)
 {
     // x axis collission check
     if(body.pos.x - body.radius < 0)

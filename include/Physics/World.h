@@ -2,19 +2,19 @@
 
 #include <vector>
 
-#include "Physics/Body.h"
+#include "Physics/CircleBody.h"
 
 class World
 {
 public:
     float width, height;
     Vector2 gravity;
-    std::vector<Body> bodies;// list of all objects spawned
+    std::vector<CircleBody> bodies;// list of all objects spawned
 
     World(float w, float h);
-    void AddBody(const Body& body);
+    void AddBody(const CircleBody& body);
     void Update(float dt); // elapsed time
 private:
-    void CheckBoundaries(Body &b);
+    void CheckBoundaries(CircleBody &b);
     void ResolveCollission(); // will implement this later
 };
