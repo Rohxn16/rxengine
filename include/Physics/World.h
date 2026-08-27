@@ -14,7 +14,9 @@ public:
     World(float w, float h);
     void AddBody(const CircleBody& body);
     void Update(float dt); // elapsed time
-private:
+    size_t  GetBodyCount() const;
+
+    private:
     void CheckBoundaries(CircleBody &b);
     void ResolveCollission(); // will implement this later
 };

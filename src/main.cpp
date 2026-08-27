@@ -1,4 +1,5 @@
 #include <iostream>
+#include <random>
 
 #include "Renderer/Renderer.h"
 #include "Physics/World.h"
@@ -41,13 +42,27 @@ int main()
 
   Uint64 prevTime = SDL_GetTicks();
   const float dt = 1.0f/60.0f;
+    static thread_local std::random_device rd;
+    static thread_local std::mt19937 generator(rd());
 
   while(running)
   {
+    size_t body_count = myWorld.GetBodyCount();
     while(SDL_PollEvent(&event))
     {
       if(event.type == SDL_EVENT_QUIT)
         running = false;
+      
+      // check mouse button click and spawn a body from there
+      // TODO: implement Click and hold for constant generation
+      if(event.type == SDL_EVENT_MOUSE_BUTTON_DOWN)
+      {
+          float X = event.button.x;
+          float Y = event.button.y;
+          std::uniform_real_distribution<float> distribution(0.0, 1.0);
+          myWorld.AddBody({Vector2(X,Y), Vector2(150, 0), 10.0f, distribution(generator)*100.0f, distribution(generator) });
+      }
+
     }
     Uint64 currTime = SDL_GetTicks();
     float frameTime = (currTime - prevTime) / 1000.0f;

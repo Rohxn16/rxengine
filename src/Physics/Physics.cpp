@@ -18,7 +18,6 @@ void World::Update(float dt)
         body.pos = body.pos + body.vel * dt;
         CheckBoundaries(body);
     }
-
     // resolve collission if any
     ResolveCollission();
 }
